@@ -18,6 +18,6 @@ export const scaleFont = (size: number) => size * PixelRatio.getFontScale();
 
 
 const scale = size => WINDOW_WIDTH / guidelineBaseWidth * size;
-const moderateScale = (size, factor = 0.5) => size + ( scale(size) - size ) * factor;
+const moderateScaleForFonts = (size, factor = 0.5) => size + ( scale(size) - size ) * factor;
 
 export {scale, verticalScale, moderateScale};
